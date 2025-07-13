@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const baseUrl = `${import.meta.env.API_BASE_URL}/playlists`;
+const baseUrl = `${import.meta.env.VITE_API_BASE_URL}/playlists`;
 
 export const playlistApi = createApi({
   reducerPath: 'playlistApi',
