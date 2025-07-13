@@ -1,69 +1,61 @@
-# React + TypeScript + Vite
+# 🎵 Muzzzz - Music Playlist Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Muzzzz is a full-featured music playlist management web application built with React, Redux Toolkit, Vite, and Material UI. It allows users to register, log in, manage playlists, search songs (with Spotify API), and enjoy a responsive, clean user experience in both light and dark themes.
 
-Currently, two official plugins are available:
+> 🔗 **Live App**: [https://muzzz-frontend.netlify.app/](https://muzzz-frontend.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📷 Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🖥 Web View
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<img width="100%" height="500" alt="image" src="https://github.com/user-attachments/assets/25b09e9a-5b99-47a4-90b6-5847a38464ec" />
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+<img width="100%" height="500" alt="image" src="https://github.com/user-attachments/assets/8eb3036d-d103-4167-af5c-110806de26c2" />
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📱 Mobile View
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<img width="100%" height="500" alt="image" src="https://github.com/user-attachments/assets/386ada3e-b4a4-4b10-82b5-453d4be3e429" />
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+<img width="100%" height="500" alt="image" src="https://github.com/user-attachments/assets/e9455a19-8973-494b-96a0-c2c4c53adb14" />
+
+---
+
+## 🚀 Features
+
+- ✅ JWT-based user authentication
+- ✅ Create, edit, delete playlists
+- ✅ Add/remove songs to/from playlists
+- ✅ Song search (from Spotify API)
+- ✅ Real-time feedback and form validation
+- ✅ Light & Dark mode support
+- ✅ Fully responsive (mobile-first)
+- ✅ RTK Query for API handling
+- ✅ Global loading indicator for all API calls
+
+---
+
+## ⚙️ Tech Stack
+
+| Frontend       | State/API Handling        | UI & Theme            |
+|----------------|----------------------------|------------------------|
+| React + Vite   | Redux Toolkit + RTK Query  | Material UI (MUI)     |
+| TypeScript     | JWT Auth                   | Custom theme (Teal)   |
+
+---
+
+## 📦 Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/TabrezMZ/muzzz-frontend.git
+cd muzzz-frontend
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
 ```
