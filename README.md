@@ -17,9 +17,10 @@ Muzzzz is a full-featured music playlist management web application built with R
 
 ### 📱 Mobile View
 
-<img width="100%" height="500" alt="image" src="https://github.com/user-attachments/assets/386ada3e-b4a4-4b10-82b5-453d4be3e429" />
+<img width="466" height="100%" alt="image" src="https://github.com/user-attachments/assets/386ada3e-b4a4-4b10-82b5-453d4be3e429" />
 
-<img width="100%" height="500" alt="image" src="https://github.com/user-attachments/assets/e9455a19-8973-494b-96a0-c2c4c53adb14" />
+<img width="466" height="100%" alt="image" src="https://github.com/user-attachments/assets/8e7f0b59-7c78-4181-b4b5-ea9e4fa47df9" />
+
 
 ---
 
