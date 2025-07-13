@@ -18,8 +18,8 @@ import { getSpotifyToken, searchSpotifyTracks } from "../utils/spotify";
 import { useState, useEffect, useRef } from "react";
 
 // Replace with environment variables or move to backend for production
-const CLIENT_ID = import.meta.env.SPOTIFY_CLIENT_ID;
-const CLIENT_SECRET = import.meta.env.SPOTIFY_CLIENT_SECRET;
+const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_SECRET;
+const CLIENT_SECRET = import.meta.env.VITE_SPOTIFY_CLIENT_SECRET;
 
 
 const PlaylistDetail = () => {
