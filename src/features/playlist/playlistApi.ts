@@ -5,8 +5,7 @@ const baseUrl = `${import.meta.env.VITE_API_BASE_URL}/playlists`;
 export const playlistApi = createApi({
   reducerPath: 'playlistApi',
   baseQuery: fetchBaseQuery({
-    baseUrl, // env variable for base URL
-    // Include token in headers for authenticated requests
+    baseUrl, 
     prepareHeaders: (headers) => {
       const token = localStorage.getItem('token');
       if (token) headers.set('Authorization', token);

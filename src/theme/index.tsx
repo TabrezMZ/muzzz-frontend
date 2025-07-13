@@ -5,10 +5,10 @@ export const getTheme = (mode: 'light' | 'dark') =>
     palette: {
       mode,
       primary: {
-        main: '#009688', // Teal
+        main: '#009688', 
       },
       secondary: {
-        main: '#4caf50', // Green
+        main: '#4caf50', 
       },
     },
     components: {

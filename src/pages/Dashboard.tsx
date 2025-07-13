@@ -9,9 +9,7 @@ import {
   ListItemText,
   IconButton,
   Stack,
-  useMediaQuery,
 } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 import { useState } from "react";
 import {
   useGetPlaylistsQuery,
@@ -36,7 +34,6 @@ const Playlists = () => {
   const [form, setForm] = useState({ name: "", description: "" });
   const [formError, setFormError] = useState("");
 
-  const theme = useTheme();
 
   const handleOpen = () => {
     setIsEdit(false);

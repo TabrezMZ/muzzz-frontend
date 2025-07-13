@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Detect screen size
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); 
   const [login, { isLoading }] = useLoginMutation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ const Login = () => {
   const [formErrors, setFormErrors] = useState<{ email?: string; password?: string }>({});
   const [apiError, setApiError] = useState("");
 
-  // ✅ Validate inputs before submit
+  //  Validate inputs before submit
   const validate = () => {
     const errors: typeof formErrors = {};
 
@@ -48,10 +48,10 @@ const Login = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
     setFormErrors({ ...formErrors, [e.target.name]: "" });
-    setApiError(""); // clear API error on input
+    setApiError(""); 
   };
 
-  // ✅ Handle login submission
+  // Handle login submission
   const handleSubmit = async () => {
     if (!validate()) return;
 
@@ -69,7 +69,7 @@ const Login = () => {
       maxWidth={400}
       mx="auto"
       mt={6}
-      px={isMobile ? 2 : 0} // add horizontal padding on mobile
+      px={isMobile ? 2 : 0} 
     >
       <Typography variant={isMobile ? "h6" : "h5"} mb={2} textAlign="center">
         Login
@@ -126,7 +126,7 @@ const Login = () => {
           variant="text"
           size="small"
           onClick={() => navigate("/register")}
-          sx={{ padding: 0, minWidth: "auto" }} // remove extra button padding
+          sx={{ padding: 0, minWidth: "auto" }} 
         >
           Register
         </Button>

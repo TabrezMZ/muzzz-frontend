@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Detect mobile screen
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); 
 
   const [register, { isLoading }] = useRegisterMutation();
   const navigate = useNavigate();
@@ -56,7 +56,7 @@ const Register = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
     setFormErrors({ ...formErrors, [e.target.name]: "" });
-    setApiError(""); // clear API error when typing
+    setApiError(""); 
   };
 
   // ✅ Submit registration form
@@ -77,7 +77,7 @@ const Register = () => {
       maxWidth={400}
       mx="auto"
       mt={6}
-      px={isMobile ? 2 : 0} // padding for mobile screens
+      px={isMobile ? 2 : 0} 
     >
       <Typography variant={isMobile ? "h6" : "h5"} mb={2} textAlign="center">
         Register

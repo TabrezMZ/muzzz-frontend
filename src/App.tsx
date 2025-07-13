@@ -7,9 +7,9 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import PlaylistDetail from './pages/PlaylistDetail';
+import GlobalLoader from './components/GlobalLoader';
 
 const App = () => {
-  // Dark/light theme mode state
   const [mode, setMode] = useState<'light' | 'dark'>('dark');
 
   // Toggle between dark and light
@@ -27,6 +27,7 @@ const App = () => {
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+         <GlobalLoader /> {/* ✅ Always on top */}
         <Navbar toggleTheme={toggleTheme} currentMode={mode} />
         <Routes>
           <Route path="/" element={<Navigate to={token ? "/dashboard" : "/login"} />} />
